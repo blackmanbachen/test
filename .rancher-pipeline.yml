@@ -1,0 +1,8 @@
+stages:
+- name: package
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: mvn clean install -DskipTests
+timeout: 60
+notification: {}
